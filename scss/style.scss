@@ -117,14 +117,14 @@ body {
             margin: 0 30px 0 10px;
             color: gray;
         }
-
-       
     }
 }
+
 #info {
     width: 100%;
     @include flex(flex, space-evenly, center)
 }
+
 #info span {
     color: $secondaryColor;
     margin-left: 5px;
