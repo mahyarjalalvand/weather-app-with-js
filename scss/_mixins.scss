@@ -1,0 +1,9 @@
+@import "varibals";
+@mixin boxShadow{
+    box-shadow: $secondaryColor 0 25px 80px -25px;
+}
+@mixin flex($display , $justify , $align){
+    display: $display;
+    justify-content: $justify;
+    align-items: $align;
+}
