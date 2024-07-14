@@ -22,19 +22,19 @@ const getWeatherData = async (type, data) => {
             break;
         default:
             url = `${BASE_URL}/forecast?q=tehran&appid=${API_KEYS}&units=metric`
-            
+
             break;
     }
 
-    try{
+    try {
         const response = await fetch(url);
         const json = await response.json()
-        if(+json.cod === 200){
+        if (+json.cod === 200) {
             return json;
-        }else{
+        } else {
             showModal(json.message)
         }
-    }catch(error){
+    } catch (error) {
         console.log(error);
     }
 }

@@ -8,6 +8,5 @@ const showModal =(text) =>{
 
 const removeModal = () =>{
     modal.style.display = "none";
-    location.reload();
 }
 export {showModal , removeModal};
